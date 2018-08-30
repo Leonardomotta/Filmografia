@@ -1,13 +1,16 @@
        
 
     <div class="container ">
-        <div *ngFor="let film of filmes.results">
+        <div  *ngFor="let film of filmes.results">
             
-            <div class="col-md-3 movieArea">
+            <div class="col-lg-3 movieArea">
+            <div class="row" >
             <a routerLink="/filmes/{{film.id}}"  routerLinkActive="active">
-                    <img src="https://image.tmdb.org/t/p/w200{{film.poster_path}}">
+                    <img class="imagem" src="https://image.tmdb.org/t/p/w200{{film.poster_path}}">
+                    <span class="tituloFilme row">{{ film.title }}</span>
             </a>
-            <span style="align-self: auto;" class="row">{{ film.title }}</span>
+            </div>
+            
             
             </div>
         

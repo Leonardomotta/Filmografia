@@ -1,0 +1,12 @@
+.titulo {
+    text-align: center;
+    margin: 20px
+}
+
+.imagem{
+    margin: 20px;
+    margin-left: 10px;
+    border: 3px  solid black;
+    border-radius: 5px;
+    
+}

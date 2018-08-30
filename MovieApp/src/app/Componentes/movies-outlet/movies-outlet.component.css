@@ -1,9 +1,22 @@
 .movieArea{
     
     margin:  30px;
-    float : right;
-    width: 30%
+    float : left;
+    
 
 
 }
 
+.imagem{
+    
+    border: 3px  solid rgb(36, 34, 34);
+    border-radius: 10px;
+}
+
+
+.tituloFilme {
+    text-align: center;
+    
+    
+    
+}

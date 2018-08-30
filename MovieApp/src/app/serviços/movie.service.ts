@@ -24,7 +24,9 @@ export class MovieService {
   public getMovieByID(id){
 
     const s = "movie/"
+    console.log(this.url+s+id+"?"+this.key)
     return this.http.get<any[]>(this.url+s+id+"?"+this.key);
+    
     
   }
 }

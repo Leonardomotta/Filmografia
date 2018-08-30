@@ -10,12 +10,12 @@ import {Filmes} from "../../models/movie.model"
 })
 export class MoviesOutletComponent implements OnInit {
 
-  filmes : Filmes
+  filmes 
 
   constructor(private movie :MovieService ) { 
     this.filmes = new Filmes;
-    this.movie.MostPopularMovies().subscribe((dados)=> {this.filmes.results = dados.results})
-    console.log(this.filmes.results);
+    this.movie.MostPopularMovies().subscribe((dados)=> {this.filmes = dados})
+    
     
     
     

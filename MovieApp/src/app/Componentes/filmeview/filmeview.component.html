@@ -1,12 +1,27 @@
 
 <div class="container ">
+
+        <div>
+                <h1 class="titulo">{{ filme.title }}</h1>
+       </div>
     
-    <div class="col-md-8 movieArea">
-    
-            <img src="https://image.tmdb.org/t/p/w300{{filme.poster_path}}">
-           <span style="align-self: auto; margin: 20px" >{{ filme.title }}</span>
+    <div class = "row">
+            {{filme.overview}}
+            <img class="imagem" src="https://image.tmdb.org/t/p/w200{{filme.poster_path}}">
+            
+
+           
     
     </div>
+
+    
+
+    
+
+
+
+
+    
 
 
 </div>

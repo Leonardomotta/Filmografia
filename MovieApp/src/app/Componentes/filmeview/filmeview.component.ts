@@ -20,6 +20,7 @@ export class FilmeviewComponent implements OnInit {
     });
     this.movie.getMovieByID(this.id).subscribe(resp=>this.filme = resp)
     
+    
 
 
   }
