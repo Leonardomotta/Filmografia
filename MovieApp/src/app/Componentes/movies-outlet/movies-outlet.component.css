@@ -29,6 +29,7 @@
 a:link {
     color : white;
     text-decoration: none;
+    outline: none;
 }
 
 
@@ -36,6 +37,7 @@ a:link {
 a:visited {
     color: white;
     text-decoration: none;
+    outline: none;
 }
 
 
@@ -44,16 +46,25 @@ a:hover {
     color: blue;
     text-decoration: none;
     border: none;
+    outline: none;
 }
 
 
 /* selected link */
 a:active {
-    color: green;
+    
     text-decoration: none;
     border: none;
+    outline: none;
     
 }
+
+div{
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
 
 
 .filme{
@@ -61,5 +72,6 @@ a:active {
     width: 250px;
     padding: 10px;
     margin: 50px;
+    border: none;
     
 }
