@@ -7,6 +7,7 @@ import { FilmeviewComponent } from "./Componentes/filmeview/filmeview.component"
     export const ROUTES : Routes = [
 
         {path: "" , component : MoviesOutletComponent},
+        {path :"buscar/:query" , component : MoviesOutletComponent},
         {path: "filmes/:id", component: FilmeviewComponent}
         
     ]

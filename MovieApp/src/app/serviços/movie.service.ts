@@ -10,6 +10,7 @@ export class MovieService {
 
   url:String = "https://api.themoviedb.org/3/"
   key:String = "api_key=91e41056f6b7f4453d009dc51fc2732b&language=pt-BR"
+  busca
   
 
   constructor(private http:HttpClient, private router:Router) { 
@@ -21,6 +22,8 @@ export class MovieService {
     return this.http.get<any[]>(this.url+s+this.key);
   }
 
+  
+
   public getMovieByID(id){
 
     const s = "movie/"
@@ -29,4 +32,12 @@ export class MovieService {
     
     
   }
+
+  public find(a){
+    const l  = "https://api.themoviedb.org/3/search/movie?api_key=91e41056f6b7f4453d009dc51fc2732b&language=pt-BR&query="
+    this.busca = this.http.get<any[]>(l+a)
+  }
+
+
+
 }

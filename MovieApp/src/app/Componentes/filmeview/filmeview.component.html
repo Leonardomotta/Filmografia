@@ -5,14 +5,17 @@
                 <h1 class="titulo">{{ filme.title }}</h1>
        </div>
     
-    <div class = "row">
-            {{filme.overview}}
-            <img class="imagem" src="https://image.tmdb.org/t/p/w200{{filme.poster_path}}">
+    <div  >
+             
             
+        <img  style="float:left"   class="imagem" src="https://image.tmdb.org/t/p/w300{{filme.poster_path}}">
+        <span>
+        <p class="col-md-6" style=" float: left;; margin-top: 20px; color: white">{{filme.overview}}</p>
 
-           
-    
-    </div>
+        </span>
+        
+        
+     </div>
 
     
 

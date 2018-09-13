@@ -1,12 +1,15 @@
 .titulo {
     text-align: center;
-    margin: 20px
+    margin: 20px;
+    color:white;
+    
 }
 
 .imagem{
     margin: 20px;
     margin-left: 10px;
-    border: 3px  solid black;
-    border-radius: 5px;
+    border: 5px  solid black;
+    border-radius: 10px;
     
 }
+
