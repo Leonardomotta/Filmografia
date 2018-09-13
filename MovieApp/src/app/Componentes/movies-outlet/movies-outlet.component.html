@@ -5,7 +5,7 @@
             
             <div class="col-lg-2 movieArea">
             <span class="row"  >
-            <a routerLink="/filmes/{{film.id}}"  routerLinkActive="active">
+            <a routerLink="/filmes/{{film.id}}"  [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active">
                 <div class="filme" >
                     <div class="tituloFilme">
                     <h5 style="overflow: hidden;"> {{ film.title }} </h5>

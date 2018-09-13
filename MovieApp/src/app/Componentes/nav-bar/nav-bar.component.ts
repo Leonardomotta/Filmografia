@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {MovieService} from '../../serviços/movie.service'
 import {Router} from "@angular/router"
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormControl } from '@angular/forms';
 
 
 @Component({
@@ -10,7 +12,7 @@ import {Router} from "@angular/router"
 })
 export class NavBarComponent implements OnInit {
  
-  valor
+  valor = new FormControl("");
   constructor(private route:Router) { }
 
   ngOnInit() {
@@ -18,8 +20,8 @@ export class NavBarComponent implements OnInit {
 
   buscar(){
     
-    console.log(this.valor)
-    this.route.navigate(["buscar/{{valor}}"])
+    
+    this.route.navigate(["buscar/"+ this.valor.value])
     
 
   }

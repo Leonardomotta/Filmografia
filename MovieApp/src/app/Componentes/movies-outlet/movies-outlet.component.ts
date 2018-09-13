@@ -11,7 +11,7 @@ import { ActivatedRoute } from '@angular/router';
 export class MoviesOutletComponent implements OnInit {
 
   filmes 
-  query
+  query 
   
   
 
@@ -19,6 +19,7 @@ export class MoviesOutletComponent implements OnInit {
     this.filmes = new Filmes;
     
     if(this.route.routeConfig.path == "buscar/:query"){
+
       this.route.params.subscribe(params => {
         this.query = params['query']
       });

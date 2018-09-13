@@ -27,23 +27,34 @@
 
 /* unvisited link */
 a:link {
-    color: red;
+    color : white;
+    text-decoration: none;
 }
+
 
 /* visited link */
 a:visited {
-    color: green;
+    color: white;
+    text-decoration: none;
 }
+
 
 /* mouse over link */
 a:hover {
-    color: hotpink;
+    color: blue;
+    text-decoration: none;
+    border: none;
 }
+
 
 /* selected link */
 a:active {
-    color:orange
+    color: green;
+    text-decoration: none;
+    border: none;
+    
 }
+
 
 .filme{
     height: 350px;

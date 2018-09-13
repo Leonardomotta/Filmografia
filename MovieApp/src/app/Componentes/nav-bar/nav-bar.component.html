@@ -5,8 +5,8 @@
       <span style="color: white">grafia</span></h2></a>
 
 
-    <div class="form-inline">
-      <input  class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+    <div  class="form-inline">
+      <input  [formControl]="valor" class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="button" (click)="buscar()">procurar</button>
     </div>
   </nav>
