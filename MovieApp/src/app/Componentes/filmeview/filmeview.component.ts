@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { MovieService } from '../../servi\u00E7os/movie.service';
+import { MovieService } from '../../serviços/movie.service';
 import { ActivatedRoute } from '@angular/router';
-import { Movie } from '../../models/movie.model';
+
 
 @Component({
   selector: 'app-filmeview',
@@ -11,7 +11,7 @@ import { Movie } from '../../models/movie.model';
 export class FilmeviewComponent implements OnInit {
 
   private id;
-  private filme
+  public filme
 
   constructor(private movie:MovieService , private route:ActivatedRoute) { 
    
